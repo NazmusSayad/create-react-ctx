@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export function createReactCtx<
+function createReactCtx<
   TCtxProps extends object,
   TResult,
   THookProps extends unknown[] = []
@@ -34,3 +34,6 @@ export function createReactCtx<
     use: useCtxHook as (...input: THookProps) => TResult,
   }
 }
+
+export { createReactCtx }
+export default createReactCtx
