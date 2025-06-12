@@ -1,0 +1,28 @@
+{
+  "name": "create-react-ctx",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "npmize dev",
+    "build": "npmize build",
+    "start": "run ./src/index.ts"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "npmize": "^1.1.11",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazmusSayad/create-react-ctx.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/NazmusSayad/create-react-ctx/issues"
+  },
+  "homepage": "https://github.com/NazmusSayad/create-react-ctx#readme"
+}

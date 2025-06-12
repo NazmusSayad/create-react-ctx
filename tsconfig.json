@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "target": "ES6",
+    "skipLibCheck": true,
+    "declaration": true,
+    "strict": true,
+    "jsx": "react",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src"]
+}
