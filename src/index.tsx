@@ -12,7 +12,7 @@ function createReactCtx<
     undefined as NoInfer<TResult>
   )
 
-  function useCtxHook(...input: THookProps) {
+  function useContext(...input: THookProps) {
     const context = React.useContext(ctx)
     if (!context) throw new Error('useContext must be used within a Provider')
 
@@ -20,7 +20,7 @@ function createReactCtx<
     return context
   }
 
-  function Provider({
+  function ContextProvider({
     children,
     ...props
   }: TCtxProps & { children: React.ReactNode }) {
@@ -29,9 +29,9 @@ function createReactCtx<
   }
 
   return {
-    ctx,
-    Provider,
-    use: useCtxHook as (...input: THookProps) => TResult,
+    context: ctx,
+    Provider: ContextProvider,
+    useContext: useContext as (...input: THookProps) => TResult,
   }
 }
 
