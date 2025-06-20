@@ -1,6 +1,9 @@
 {
   "name": "create-react-ctx",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "A lightweight, type-safe utility for creating React contexts with minimal boilerplate",
+  "author": "NazmusSayad",
+  "license": "MIT",
   "scripts": {
     "test": "bun test",
     "dev": "npmize dev",
@@ -23,7 +26,16 @@
     "type": "git",
     "url": "git+https://github.com/NazmusSayad/create-react-ctx.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "context",
+    "typescript",
+    "hooks",
+    "state-management",
+    "react-context",
+    "type-safe",
+    "boilerplate"
+  ],
   "bugs": {
     "url": "https://github.com/NazmusSayad/create-react-ctx/issues"
   },
